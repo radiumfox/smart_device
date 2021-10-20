@@ -1,0 +1,21 @@
+@mixin placeholder {
+  &::placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: $basic-light;
+    font-family: "PT Mono", "Times New Roman", serif;
+    opacity: 1;
+  }
+}
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin font($font-size, $line-height, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
