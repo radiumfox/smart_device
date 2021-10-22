@@ -1,0 +1,16 @@
+.button {
+  @include font(16px, 19px, 700);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  background-color: $accent-primary;
+  border: none;
+  border-radius: 5px;
+  color: $basic-light;
+  padding: 16px 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($accent-primary, 0.9);
+  }
+}
