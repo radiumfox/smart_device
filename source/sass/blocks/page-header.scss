@@ -30,7 +30,7 @@
   }
 }
 
-.page-header__nav-wrapper img {
+.page-header__logo svg {
   &:first-child {
     @media (max-width: $tablet-width-only) {
       margin-right: 5px;
@@ -43,6 +43,8 @@
   }
 
   &:last-child {
+    fill: $basic-light;
+
     @media (max-width: $mobile-width-only) {
       display: none;
     }

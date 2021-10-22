@@ -14,9 +14,13 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__nav-wrapper">
-          <a>
-            <img src="img/logo-img.svg" width="52" height="52" alt="Логотип">
-            <img src="img/logo-text.svg" width="134" height="45" alt="Текст логотипа">
+          <a class="page-header__logo">
+            <svg width="52" height="52">
+              <use xlink:href="img/sprite.svg#logo-img"></use>
+            </svg>
+            <svg width="148" height="45">
+              <use xlink:href="img/sprite.svg#logo-text"></use>
+            </svg>
           </a>
           <nav class="main-nav">
             <ul class="main-nav__list">
@@ -209,85 +213,91 @@
 
 <!--    </main>-->
 
-<!--    <footer class="page-footer">-->
-<!--      <div class="page-footer__wrapper">-->
-<!--        <div class="page-footer__upper">-->
-<!--          <div class="page-footer__links">-->
-<!--            <a>-->
-<!--              <img src="img/logo-img.svg" width="52" height="52" alt="Логотип">-->
-<!--              <img src="img/logo-text.svg" width="134" height="45" alt="Текст логотипа">-->
-<!--            </a>-->
-<!--            <ul class="page-footer__socials">-->
-<!--              <li>-->
-<!--                <a href="#">-->
-<!--                  <svg width="27" height="27">-->
-<!--                    <use xlink:href="img/sprite.svg#facebook"></use>-->
-<!--                  </svg>-->
-<!--                </a>-->
-<!--              </li>-->
-<!--              <li>-->
-<!--                <a href="#">-->
-<!--                  <svg width="27" height="27">-->
-<!--                    <use xlink:href="img/sprite.svg#odnoklassniki"></use>-->
-<!--                  </svg>-->
-<!--                </a>-->
-<!--              </li>-->
-<!--              <li>-->
-<!--                <a href="#">-->
-<!--                  <svg width="27" height="27">-->
-<!--                    <use xlink:href="img/sprite.svg#vk"></use>-->
-<!--                  </svg>-->
-<!--                </a>-->
-<!--              </li>-->
-<!--            </ul>-->
-<!--          </div>-->
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__upper">
+          <div class="page-footer__upper-box">
+            <div class="page-footer__links">
+              <a class="page-footer__logo">
+                <svg width="52" height="52">
+                  <use xlink:href="img/sprite.svg#logo-img"></use>
+                </svg>
+                <svg width="148" height="45">
+                  <use xlink:href="img/sprite.svg#logo-text"></use>
+                </svg>
+              </a>
+              <ul class="page-footer__socials">
+                <li>
+                  <a href="#">
+                    <svg width="27" height="27">
+                      <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="27" height="27">
+                      <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="27" height="27">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-<!--          <div class="page-footer__nav">-->
-<!--            <button type="button">Разделы сайта</button>-->
-<!--            <ul class="page-footer__nav-list">-->
-<!--              <li>-->
-<!--                <a href="#about">О компании</a>-->
-<!--              </li>-->
-<!--              <li>-->
-<!--                <a href="#services">Продукты</a>-->
-<!--              </li>-->
-<!--              <li>-->
-<!--                <a href="#">Производство печатных плат</a>-->
-<!--              </li>-->
-<!--              <li>-->
-<!--                <a href="#">Монтаж печатных плат</a>-->
-<!--              </li>-->
-<!--              <li>-->
-<!--                <a href="#">Комплектующие</a>-->
-<!--              </li>-->
-<!--              <li>-->
-<!--                <a href="#">Доставка</a>-->
-<!--              </li>-->
-<!--              <li>-->
-<!--                <a href="#">Контакты</a>-->
-<!--              </li>-->
-<!--            </ul>-->
-<!--          </div>-->
+            <div class="page-footer__nav">
+              <button type="button">Разделы сайта</button>
+              <ul class="page-footer__nav-list">
+                <li>
+                  <a href="#about">О компании</a>
+                </li>
+                <li>
+                  <a href="#services">Продукты</a>
+                </li>
+                <li>
+                  <a href="#">Производство печатных плат</a>
+                </li>
+                <li>
+                  <a href="#">Монтаж печатных плат</a>
+                </li>
+                <li>
+                  <a href="#">Комплектующие</a>
+                </li>
+                <li>
+                  <a href="#">Доставка</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
 
-<!--          <div class="page-footer__contacts">-->
-<!--            <h2>Наш офис</h2>-->
-<!--            <address>г. Мытищи, Олимпийский проспект, д.10</address>-->
-<!--            <ul class="page-footer__numbers">-->
-<!--              <li>+7 (495) 589-40-50</li>-->
-<!--              <li>+7 (925) 003-87-67</li>-->
-<!--              <li>+7 (926) 926-080-79</li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--        </div>-->
+            <div class="page-footer__contacts">
+              <h2>Наш офис</h2>
+              <address>г. Мытищи, Олимпийский проспект, д.10</address>
+              <ul class="page-footer__numbers">
+                <li><a href="tel:74955894050">+7 (495) 589-40-50</a></li>
+                <li><a href="tel:79250038767">+7 (925) 003-87-67</a></li>
+                <li><a href="tel:792692608079">+7 (926) 926-080-79</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-<!--        <div class="page-footer__lower">-->
-<!--          <p>Все права защищены</p>-->
-<!--          <p>1999-2018 SD Service Devices</p>-->
-<!--          <a href="#">Условия конфиденциальности</a>-->
-<!--          <p>Developed by wow studio</p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </footer>-->
+        <div class="page-footer__lower">
+          <p>Все права защищены</p>
+          <p class="page-footer__company">1999-2018 SD Service Devices</p>
+          <a href="#">Условия конфиденциальности</a>
+          <p>Developed by wow studio</p>
+        </div>
+      </div>
+    </footer>
   <script src="js/main.js"></script>
   </body>
 </html>
