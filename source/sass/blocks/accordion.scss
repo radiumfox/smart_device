@@ -1,0 +1,60 @@
+.accordion {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 52px);
+    height: 1px;
+    background-color: rgba($special-grey-light, 0.2);
+    left: -26px;
+    bottom: 0;
+  }
+}
+
+.accordion__content {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+    padding-bottom: 23px;
+  }
+}
+
+.accordion__content--open {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
+.accordion__button {
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    width: 100%;
+    text-align: left;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 1px;
+      background-color: $special-grey-2;
+      right: -8px;
+      top: 8px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 16px;
+      background-color: $special-grey-2;
+      right: 0;
+      transition: transform 0.1s ease;
+    }
+  }
+}
+
+.accordion__button--open {
+  &::after {
+    transform: rotate(90deg);
+  }
+}
