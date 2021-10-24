@@ -58,7 +58,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -130,8 +131,18 @@
   margin-right: 16px;
 }
 
+.page-footer__socials svg {
+  fill: $special-grey-icons;
+
+  &:hover {
+    fill: rgba($special-grey-light, 0.5);
+  }
+}
+
 .page-footer__nav {
-  padding-top: 38px;
+  @media (max-width: $tablet-width-only) {
+    padding-top: 38px;
+  }
 }
 
 .page-footer__nav button {

@@ -1,14 +1,16 @@
 .accordion {
-  position: relative;
+  @media (max-width: $mobile-width-only) {
+    position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: calc(100% + 52px);
-    height: 1px;
-    background-color: rgba($special-grey-light, 0.2);
-    left: -26px;
-    bottom: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% + 52px);
+      height: 1px;
+      background-color: rgba($special-grey-light, 0.2);
+      left: -26px;
+      bottom: 0;
+    }
   }
 }
 
