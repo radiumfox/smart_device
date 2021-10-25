@@ -105,7 +105,7 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'images', 'html', 'scripts'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'images', 'webp', 'html', 'scripts'));
 gulp.task('start', gulp.series('build', 'server'));
 
 // deploy
